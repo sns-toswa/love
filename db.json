@@ -1,23 +1,5 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "Первый пост",
-      "content": "Это тестовый контент"
-    }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "name": "Alex",
-      "email": "alex@example.com"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "postId": 1,
-      "text": "Отличный пост!"
-    }
-  ]
-}
+fetch("http://localhost:3000/posts")
+  .then(async response => {
+    const text = await response.text();
+    console.log("RAW RESPONSE:", text); // Покажет, что именно пришло
+  });
