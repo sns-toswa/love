@@ -1,8 +1,26 @@
 {
   "posts": [
-    { "id": 1, "text": "Love ❤️" }
+    {
+      "id": 1,
+      "title": "Первый пост",
+      "content": "Привет! Это тестовый пост."
+    },
+    {
+      "id": 2,
+      "title": "Второй пост",
+      "content": "Еще один тестовый пост."
+    }
   ],
   "users": [
-    { "id": 1, "name": "Anna" }
+    {
+      "id": 1,
+      "name": "Alex",
+      "email": "alex@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Anna",
+      "email": "anna@example.com"
+    }
   ]
 }
