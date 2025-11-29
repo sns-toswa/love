@@ -1,4 +1,8 @@
-fetch("https://my-json-server.typicode.com/typicode/demo/posts")
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
+{
+  "posts": [
+    { "id": 1, "text": "Love ❤️" }
+  ],
+  "users": [
+    { "id": 1, "name": "Anna" }
+  ]
+}
