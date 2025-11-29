@@ -1,12 +1,4 @@
-fetch("http://localhost:3000/posts")
-  .then(async response => {
-    const text = await response.text();     // <- читаем как текст
-    console.log("Ответ сервера:", text);    // <- смотрим, ЧТО реально пришло
-
-    try {
-      const json = JSON.parse(text);        // <- пробуем превратить в JSON
-      console.log("JSON:", json);
-    } catch {
-      console.error("Не JSON! Реальный ответ:", text);
-    }
-  });
+fetch("https://my-json-server.typicode.com/typicode/demo/posts")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
